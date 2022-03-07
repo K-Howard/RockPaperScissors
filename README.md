@@ -1,4 +1,4 @@
-# color-random
+# Rock Paper Scissors
 
 ### Table of Contents
 - [About the Project](#about-the-project)
@@ -28,3 +28,4 @@
 
 #### Deploy Link
  [Click Here](https:)
+
