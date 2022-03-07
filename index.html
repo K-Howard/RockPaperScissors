@@ -1,43 +1,50 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Rock Paper Scissors</title>
-  </head>
-  <body>
-    <section class="game">
-      <div class="score">
-        <div class="player-score">
-          <h2>You</h2>
-          <p>0</p>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <p id="humanScoreBanner"></p>
+            </div>
+            <div>
+                <p id="humanScorePoints"></p>
+            </div>
         </div>
-        <div class="computer-score">
-          <h2>Artificial Intelligence Computer</h2>
-          <p>0</p>
+        <p id="para"></p>
+        <div>
+            <div>
+                <p id="robotScoreBanner"></p>
+            </div>
+            <div>
+                <p id="robotScorePoints"></p>
+            </div>
         </div>
-      </div>
-      <div class="intro">
-        <h1>Rock Paper Scissors</h1>
-        <button>Let's Play</button>
-      </div>
-      <div class="match">
-        <!-- match faded out ? yeah idk yet  -->
-        <h2 class="winner">Choose Your Weapon</h2>
-        <div class="hands">
-          <img class="player-hand" src="./assets" alt="" />
-          <img class="computer-hand" src="./assets" alt="" />
+    </header>
+    <div class="container">
+        <div class="row">
+            <div type="button" id="rock" class="btn rock">
+            </div>
+            <div type="button" id="paper" class="btn paper">
+            </div>
+            <div type="button" id="scissors" class="btn scissors">
+            </div>
         </div>
-        <div class="options">
-          <button class="rock">rock</button>
-          <button class="paper">paper</button>
-          <button class="scissors">scissors</button>
+    </div>
+    <footer>
+        <div>
+            <p id="roundConclusion"></p>
         </div>
-      </div>
-    </section>
-    <script src="game.js"></script>
-    <script src="main.js"></script>
-    <script src="player.js"></script>
-  </body>
+    </footer>
+    <script src="main.js" async defer></script>
+</body>
 </html>
