@@ -1,7 +1,7 @@
 
 body {
     text-align: center;
-    background-color: #457b9d;
+    background-color: #947f5a;
     margin: 0;
     padding: 0;
 }
@@ -12,7 +12,7 @@ header {
     height: 200px;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #1d3557;
+    background-color: #5a9460
 }
 
 p {
@@ -20,27 +20,10 @@ p {
     font-weight: bold;
     color: black;
 }
-
-/* ADD COLORS FOR STUFF BEFORE TURNING IT IN */
-/* ADD COLORS FOR STUFF BEFORE TURNING IT IN */
-/* ADD COLORS FOR STUFF BEFORE TURNING IT IN */
-/* ADD COLORS FOR STUFF BEFORE TURNING IT IN */
-
-
-#humanScoreBanner {
-    color:
-}
-
-#humanScorePoints {
-    color:
-}
-
-#robotScoreBanner {
-    color:
-}
-
-#robotScorePoints {
-    color:
+img {
+  margin: auto;
+  display: block;
+  width: 60%;
 }
 
 #roundWinner {
@@ -54,6 +37,22 @@ p {
     width: 100vw;
     padding-top: 100px;
     margin: auto;
+}
+.rock {
+  background-image: url("./assets/rock.png");
+}
+.paper {
+  background-image: url("./assets/paper.png");
+
+}
+.scissors {
+  background-image: url("./assets/scissors.png");
+}
+.turkey {
+  background-image: url("./assets/turkey.png");
+}
+.lizard {
+  background-image: url("./assets/lizard.png");
 }
 .rock,
 .paper,
@@ -70,7 +69,10 @@ p {
   margin: 30px;
   background-color: #5a7694;
   border: 10px solid black;
-  border-radius: 30%; 
+  border-radius: 30%;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
 
 }
  .row {
@@ -82,5 +84,5 @@ p {
 }
 
 .rock:hover, .scissors:hover, .paper:hover, .turkey:hover, .lizard:hover {
-    border-color: #a8dadc;
+    border-color: #570423;
 }
