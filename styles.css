@@ -20,6 +20,13 @@ p {
     font-weight: bold;
     color: black;
 }
+
+/* ADD COLORS FOR STUFF BEFORE TURNING IT IN */
+/* ADD COLORS FOR STUFF BEFORE TURNING IT IN */
+/* ADD COLORS FOR STUFF BEFORE TURNING IT IN */
+/* ADD COLORS FOR STUFF BEFORE TURNING IT IN */
+
+
 #humanScoreBanner {
     color:
 }
@@ -48,15 +55,25 @@ p {
     padding-top: 100px;
     margin: auto;
 }
-.btn {
+.rock,
+.paper,
+.scissors,
+.turkey,
+.lizard {
     margin: 30px;
     height: 200px;
     width: 200px;
     border: 10px solid black;
     border-radius: 30%;
 }
+.pick5-button {
+  margin: 30px;
+  background-color: #5a7694;
+  border: 10px solid black;
+  border-radius: 30%; 
 
-.row {
+}
+ .row {
     display: flex;
     width: 100%;
     align-items: center;
@@ -64,6 +81,6 @@ p {
     justify-content: center;
 }
 
-.btn:hover {
+.rock:hover, .scissors:hover, .paper:hover, .turkey:hover, .lizard:hover {
     border-color: #a8dadc;
 }

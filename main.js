@@ -8,6 +8,7 @@ var papers = document.getElementById("paper");
 var scissors = document.getElementById("scissors");
 var turkey = document.getElementById("turkey");
 var lizard = document.getElementById("lizard");
+var play5 = document.getElementById("playFive");
 
 document.getElementById("humanScorePoints").innerHTML = "0";
 document.getElementById("robotScorePoints").innerHTML = "0";
@@ -24,19 +25,31 @@ scissors.addEventListener('click', function() {
   pick('scissors')
 });
 
-
 turkey.addEventListener('click', function() {
   pick('turkey')
 });
-
 
 lizard.addEventListener('click', function() {
   pick('lizard')
 });
 
+play5.addEventListener('click', function() {
+  play5option()
+});
+
 function play5option() {
-  turkey.classList.toggle("hidden")
-  lizard.classList.toggle("hidden")
+  var t = document.getElementById("turkey");
+  var l = document.getElementById("lizard");
+  if (t.style.display === "none") {
+    t.style.display = "block";
+  } else {
+    t.style.display = "none";
+  }
+  if (l.style.display === "none") {
+    l.style.display = "block";
+  } else {
+    l.style.display = "none";
+  }
 }
 
 function pick(choice) {
@@ -103,14 +116,14 @@ function playRound(playerSelection, computerSelection) {
         return ("lose")
     }
 };
-//  Here is the function for the 5 round play and it needs a lot more work with if else
+//  Here is the function for the 5 round play and it needs a lot more work with if else add more above
 
-function playFiveRound(playerSelection, computerSelection) {
-    if (playerSelection === 'rock' && computerSelection === 'scissors') {
-        document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
-        return ("win")
-
-    } else if (playerSelection === 'paper' && computerSelection === 'rock') {
-        document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
-
-};
+//
+//     if (playerSelection === 'rock' && computerSelection === 'scissors') {
+//         document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
+//         return ("win")
+//
+//     } else if (playerSelection === 'paper' && computerSelection === 'rock') {
+//         document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
+//
+// };
