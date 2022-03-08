@@ -1,10 +1,10 @@
 class Player {
- constructor(name, token, wins) {
+ constructor(name, token, humanScore) {
    this.name = human
-   this.token =
+   this.token = token
    this.wins = humanScore
  }
- takeTurn() {
+takeTurn() {
 
  }
 }
