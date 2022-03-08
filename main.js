@@ -1,4 +1,5 @@
 var newGame1 = new Game()
+var newPlayer1 = new Player()
 var computerScore = 0;
 var humanScore = 0;
 var playChoice = '';
@@ -58,41 +59,35 @@ function play5option() {
 
 function pick(choice) {
   if (choice === 'rock') {
-              humanPlay(choice);
-              return;
-          }
-          else if (choice === 'paper') {
-              humanPlay(choice);
-              return;
-          }
-          else if (choice === 'scissors') {
-              humanPlay(choice);
-              return;
-          }
-          else if (choice === 'turkey') {
-             humanPlay(choice)
-             return;
-          }
-          else if (choice === 'lizard') {
-             humanPlay(playChoice)
-             return;
-          } else {
+            newPlayer1.humanPlay(choice);
+            return;
+          
+        } else if (choice === 'paper') {
+            newPlayer1.humanPlay(choice);
+            return;
+
+        } else if (choice === 'scissors') {
+            newPlayer1.humanPlay(choice);
+            return;
+
+        } else if (choice === 'turkey') {
+            newPlayer1.humanPlay(choice)
+            return;
+
+        } else if (choice === 'lizard') {
+            newPlayer1.humanPlay(playChoice)
+            return;
+        } else {
               return;
   };
     document.getElementById("paragraph").innerHTML = "You picked " + choice + "!";
 };
 
 function computerPlay() {
-    return myArray[~~(Math.random() * myArray.length)];
-};
+  if (document.getElementById("paragraph").innerText === "ROCK PAPER SCISSORS") {
+  return myArray[~~(Math.random() * myArray.length)];
 
-function computerPlayFive() {
-    return fiveArray[~~(Math.random() * fivearray.length)];
-};
-
-function humanPlay(choice) {
-    var playerSelection = choice;
-    var computerSelection = computerPlay();
-    var result = newGame1.playRound(playerSelection, computerSelection);
-    newGame1.computeScore(result);
-};
+ } else {
+   return fiveArray[~~(Math.random() * fiveArray.length)];
+ };
+}
