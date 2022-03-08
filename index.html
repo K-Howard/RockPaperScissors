@@ -1,8 +1,6 @@
 
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rock paper scissors</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -10,7 +8,7 @@
     <header>
         <div>
             <div>
-                <p id="humanScoreBanner"></p>
+                <p id="humanScoreBanner">YOUR SCORE</p>
             </div>
             <div>
                 <p id="humanScorePoints"></p>
@@ -19,7 +17,7 @@
         <p id="paragraph"></p>
         <div>
             <div>
-                <p id="robotScoreBanner"></p>
+                <p id="robotScoreBanner">COMPUTERS SCORE</p>
             </div>
             <div>
                 <p id="robotScorePoints"></p>
@@ -28,11 +26,15 @@
     </header>
     <div class="container">
         <div class="row">
-            <div type="button" id="rock" class="btn rock">
+            <div type="button" id="rock" class="btn">
             </div>
-            <div type="button" id="paper" class="btn paper">
+            <div type="button" id="paper" class="btn">
             </div>
-            <div type="button" id="scissors" class="btn scissors">
+            <div type="button" id="scissors" class="btn">
+            </div>
+            <div hidden type="button" id="turkey" class="btn">
+            </div>
+            <div hidden type="button" id="lizard" class="btn">
             </div>
         </div>
     </div>
