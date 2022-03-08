@@ -4,7 +4,10 @@ class Player {
    this.token = token
    this.wins = humanScore
  }
-takeTurn() {
-
- }
+  humanPlay(choice) {
+    var playerSelection = choice;
+    var computerSelection = computerPlay();
+    var result = playRound(playerSelection, computerSelection);
+     computeScore(result);
+ };
 }

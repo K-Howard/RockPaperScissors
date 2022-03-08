@@ -1,55 +1,59 @@
+var newGame1 = new Game()
 var computerScore = 0;
 var humanScore = 0;
 var playChoice = '';
 var myArray = ['rock', 'paper', 'scissors'];
 var fiveArray = ['rock', 'paper', 'scissors', 'turkey', 'lizard']
-var rocks = document.getElementById("rock");
-var papers = document.getElementById("paper");
-var scissors = document.getElementById("scissors");
-var turkey = document.getElementById("turkey");
-var lizard = document.getElementById("lizard");
-var play5 = document.getElementById("playFive");
+var play5 = document.querySelector(".pick5-button")
+var rocks = document.querySelector(".rock")
+var papers = document.querySelector(".paper")
+var scissors = document.querySelector(".scissors")
+var turkeys = document.querySelector(".turkey")
+var lizards = document.querySelector(".lizard")
 
 document.getElementById("humanScorePoints").innerHTML = "0";
 document.getElementById("robotScorePoints").innerHTML = "0";
 
-rocks.addEventListener('click', function() {
+rocks.addEventListener("click", function() {
   pick('rock')
 });
 
-papers.addEventListener('click', function() {
+papers.addEventListener("click", function() {
  pick('paper')
 });
 
-scissors.addEventListener('click', function() {
+scissors.addEventListener("click", function() {
   pick('scissors')
 });
 
-turkey.addEventListener('click', function() {
+turkey.addEventListener("click", function() {
   pick('turkey')
 });
 
-lizard.addEventListener('click', function() {
+lizard.addEventListener("click", function() {
   pick('lizard')
 });
 
-play5.addEventListener('click', function() {
+play5.addEventListener("click", function() {
   play5option()
+  play5turkeyLizard()
 });
+
+function play5turkeyLizard() {
+   if (document.getElementById("paragraph").innerText === "ROCK PAPER SCISSORS") {
+  document.getElementById("paragraph").innerText = "ROCK PAPER SCISSORS TURKEY LIZARDS"
+
+  } else {
+  document.getElementById("paragraph").innerText = "ROCK PAPER SCISSORS"
+ }
+}
 
 function play5option() {
   var t = document.getElementById("turkey");
   var l = document.getElementById("lizard");
-  if (t.style.display === "none") {
-    t.style.display = "block";
-  } else {
-    t.style.display = "none";
-  }
-  if (l.style.display === "none") {
-    l.style.display = "block";
-  } else {
-    l.style.display = "none";
-  }
+  t.hidden = !t.hidden
+  l.hidden = !l.hidden
+
 }
 
 function pick(choice) {
@@ -80,7 +84,6 @@ function pick(choice) {
 
 function computerPlay() {
     return myArray[~~(Math.random() * myArray.length)];
-    // return Math.floor(Math.random() * myArray.length);
 };
 
 function computerPlayFive() {
@@ -90,40 +93,6 @@ function computerPlayFive() {
 function humanPlay(choice) {
     var playerSelection = choice;
     var computerSelection = computerPlay();
-    var result = playRound(playerSelection, computerSelection);
-    computeScore(result);
+    var result = newGame1.playRound(playerSelection, computerSelection);
+    newGame1.computeScore(result);
 };
-
-function playRound(playerSelection, computerSelection) {
-    if (playerSelection === 'rock' && computerSelection === 'scissors') {
-        document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
-        return ("win")
-
-    } else if (playerSelection === 'paper' && computerSelection === 'rock') {
-        document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
-        return ("win")
-
-    } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-        document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
-        return ("win")
-
-    } else if (playerSelection === computerSelection) {
-        document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! Tie game!"
-        return ("tie")
-
-    } else {
-        document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You lose!"
-        return ("lose")
-    }
-};
-//  Here is the function for the 5 round play and it needs a lot more work with if else add more above
-
-//
-//     if (playerSelection === 'rock' && computerSelection === 'scissors') {
-//         document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
-//         return ("win")
-//
-//     } else if (playerSelection === 'paper' && computerSelection === 'rock') {
-//         document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
-//
-// };

@@ -8,15 +8,17 @@
     <header>
         <div>
             <div>
-                <p id="humanScoreBanner">YOUR SCORE</p>
+                <img src="./assets/person.png"/>
+                <p class="humanScoreBanner" id="humanScoreBanner">YOUR SCORE</p>
             </div>
             <div>
                 <p id="humanScorePoints"></p>
             </div>
         </div>
-        <p id="paragraph"></p>
+        <p id="paragraph" class="paragraph">ROCK PAPER SCISSORS</p>
         <div>
             <div>
+                <img src="./assets/robot.png"/>
                 <p id="robotScoreBanner">COMPUTERS SCORE</p>
             </div>
             <div>
@@ -26,26 +28,26 @@
     </header>
     <div class="container">
         <div class="row">
-            <div type="button" id="rock" class="rock">
+            <div type="button" id="rock" class="rock icon">
             </div>
-            <div type="button" id="paper" class="paper">
+            <div type="button" id="paper" class="paper icon">
             </div>
-            <div type="button" id="scissors" class="scissors">
+            <div type="button" id="scissors" class="scissors icon">
             </div>
-            <div hidden type="button" id="turkey" class="turkey">
+            <div hidden type="button" id="turkey" class="turkey icon">
             </div>
-            <div hidden type="button" id="lizard" class="lizard hidden">
+            <div hidden type="button" id="lizard" class="lizard icon">
             </div>
         </div>
     </div>
     <footer>
         <div>
-            <p id="roundConclusion"></p>
-            <button id="playFive"class="pick5-button">PICK 5 PLAY</button>
+            <p id="roundConclusion" class="round-conlusion"></p>
+            <button id="playFive" class="pick5-button">CHANGE GAME MODE</button>
         </div>
     </footer>
-    <script src="main.js"></script>
-    <script src="game.js"></script>
     <script src="player.js"></script>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
