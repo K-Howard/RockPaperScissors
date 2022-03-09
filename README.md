@@ -5,7 +5,7 @@
 - [Contributors](#contributors)
 - [Technologies Used](#technologies-used)
 - [Instructions on Use](#instructions-on-use)
-- [Project Goals](#project-learning-goals)
+- [Project Learning Goals](#project-learning-goals)
 - [Deploy Link](#deploy-link)
 
 #### About the Project
