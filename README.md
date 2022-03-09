@@ -50,8 +50,9 @@ Lizard runs from Scissors and Paper.
 - Make a second version with 5 choices.
 - Be able to toggle the game modes without the site breaking.
 - Have a prompt that tells who the winner is.
-- Make the game declare a winner at 5 wins and reset.
+- Make the game declare a victor at 5 wins and reset.
 - Try and make the javascript code clean, readable and dry.
+- Try and implement more sophisticated javascript.
 - Use more in depth CSS styling for added effects.
 
 
