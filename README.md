@@ -38,7 +38,7 @@ Lizard runs from Scissors and Paper.
 - Click one of the three options in the middle to choose your pick.
 - The computer will have a randomly generated pick.
 - Your score is in the top left and the computers score in the top right.
-- For a more challenging game called rock paper scissor turkey lizards, Double click the bottom button.
+- For a more challenging game called rock paper scissor turkey lizards, click the bottom button.
 --
 - To play the game yourself, click the green code button and copy the SSH.
 - In your terminal type "git clone" and then paste the copied link after.
