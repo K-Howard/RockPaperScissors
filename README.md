@@ -5,6 +5,7 @@
 - [Contributors](#contributors)
 - [Technologies Used](#technologies-used)
 - [Instructions on Use](#instructions-on-use)
+- [Project Goals](#project-goals)
 - [Deploy Link](#deploy-link)
 
 #### About the Project
@@ -44,5 +45,15 @@ Lizard runs from Scissors and Paper.
 - In your terminal type "git clone" and then paste the copied link after.
 - Cd into your new directory and then type open index.html to pull up the site.
 
+#### Project Goals
+- Make a functioning Rock Paper Scissors Game.
+- Make a second version with 5 choices.
+- Be able to toggle the game modes without the site breaking.
+- Have a prompt that tells who the winner is.
+- Make the game declare a winner at 5 wins and reset.
+- Try and make the javascript code clean, readable and dry.
+- Use more in depth CSS styling for added effects.
+
+
 #### Deploy Link
- [Cant add diploy link just yet](https:)
+ [Click Here To Play!](https://k-howard.github.io/RockPaperScissors/)

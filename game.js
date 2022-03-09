@@ -44,31 +44,31 @@ class Game {
           return ("tie")
 
       } else if (playerSelection === 'scissors' && computerSelection === 'turkey') {
-            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You lose!"
+            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
             return ("win")
 
       } else if (playerSelection === 'paper' && computerSelection === 'turkey') {
-            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You lose!"
+            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
             return ("win")
 
       } else if (playerSelection === 'rock' && computerSelection === 'lizard') {
-            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You lose!"
+            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
             return ("win")
 
       } else if (playerSelection === 'turkey' && computerSelection === 'lizard') {
-            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You lose!"
+            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
             return ("win")
 
       } else if (playerSelection === 'turkey' && computerSelection === 'rock') {
-            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You lose!"
+            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
             return ("win")
 
       } else if (playerSelection === 'lizard' && computerSelection === 'paper') {
-            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You lose!"
+            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
             return ("win")
 
       } else if (playerSelection === 'lizard' && computerSelection === 'scissors') {
-            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You lose!"
+            document.getElementById("roundConclusion").innerHTML = "Computer picked " + computerSelection + "! You win!"
             return ("win")
 
       } else {
