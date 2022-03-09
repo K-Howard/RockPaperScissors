@@ -22,9 +22,9 @@ Paper covers rock
 
 New Game Mode Rules
 
-The other rules still apply plus these
-Turkey eats Rock Lizard
-Lizard runs from Scissors and Paper
+The other rules still apply plus these,
+Turkey eats Rock and Lizard,
+Lizard runs from Scissors and Paper.
 
 #### Contributors
  - Kyle Howard
