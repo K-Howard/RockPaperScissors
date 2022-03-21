@@ -1,16 +1,16 @@
-var newGame1 = new Game()
-var newPlayer1 = new Player()
-var computerScore = 0;
-var humanScore = 0;
-var playChoice = '';
-var myArray = ['rock', 'paper', 'scissors'];
-var fiveArray = ['rock', 'paper', 'scissors', 'turkey', 'lizard']
-var play5 = document.querySelector(".pick5-button")
-var rocks = document.querySelector(".rock")
-var papers = document.querySelector(".paper")
-var scissors = document.querySelector(".scissors")
-var turkeys = document.querySelector(".turkey")
-var lizards = document.querySelector(".lizard")
+let newGame1 = new Game()
+let newPlayer1 = new Player()
+let computerScore = 0;
+let humanScore = 0;
+let playChoice = '';
+let myArray = ['rock', 'paper', 'scissors'];
+let fiveArray = ['rock', 'paper', 'scissors', 'turkey', 'lizard']
+const play5 = document.querySelector(".pick5-button")
+const rocks = document.querySelector(".rock")
+const papers = document.querySelector(".paper")
+const scissors = document.querySelector(".scissors")
+const turkeys = document.querySelector(".turkey")
+const lizards = document.querySelector(".lizard")
 
 document.getElementById("humanScorePoints").innerHTML = "0";
 document.getElementById("robotScorePoints").innerHTML = "0";
@@ -61,7 +61,7 @@ function pick(choice) {
   if (choice === 'rock') {
             newPlayer1.humanPlay(choice);
             return;
-          
+
         } else if (choice === 'paper') {
             newPlayer1.humanPlay(choice);
             return;

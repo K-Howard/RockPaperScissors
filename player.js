@@ -5,9 +5,9 @@ class Player {
    this.wins = humanScore
  }
   humanPlay(choice) {
-    var playerSelection = choice;
-    var computerSelection = computerPlay();
-    var result = newGame1.playRound(playerSelection, computerSelection);
+    let playerSelection = choice;
+    let computerSelection = computerPlay();
+    let result = newGame1.playRound(playerSelection, computerSelection);
      newGame1.computeScore(result);
  };
 }
